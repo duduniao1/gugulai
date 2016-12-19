@@ -1,0 +1,106 @@
+.header {
+  height: 50px;
+  border-bottom: 1px solid #d6d7dc;
+  background: #fff;
+  margin-bottom: 10px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 20px;
+  position: relative;
+}
+.header:before {
+  content: '';
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  display: block;
+  width: 16px;
+  height: 30px;
+  background: url("../../img/header/nav_back_icon@2x.png") no-repeat center;
+  background-size: 100%;
+}
+.photo_box {
+  list-style: none;
+  display: flex;
+  background: #fff;
+  height: 114px;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  color: #646464;
+}
+.photo_box .photo_cell {
+  flex: 3;
+  margin: 36px 11px;
+  text-align: center;
+}
+.photo_box .photo_cell .photo_cell_box {
+  height: 64px;
+  background: #878787;
+  border-radius: 5px;
+}
+body {
+  background: #efeff4;
+  color: #646464;
+}
+/* font-family "Microsoft Yahei"*/
+.personInfo_header {
+  margin-bottom: 0;
+}
+.info_box {
+  padding: 20px 15px;
+  background-color: #fff;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.info_box .info_img {
+  width: 68px;
+  height: 68px;
+  margin: 0 auto;
+  background: url("../../img/header/logo_icon_03.png") no-repeat center;
+  background-size: 100%;
+}
+.info_box .info_name {
+  text-align: center;
+  line-height: 24px;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.info_box .info_desc {
+  text-align: center;
+  line-height: 18px;
+  margin-bottom: 5px;
+}
+.info_box .info_edit {
+  width: 6em;
+  margin: 0 auto;
+  padding: 8px 14px;
+  border: 1px solid #ffa66b;
+  border-radius: 5px;
+  color: #ffa66b;
+  line-height: 20px;
+}
+.info-cell {
+  display: flex;
+  padding: 0 auto;
+  line-height: 40px;
+  background: #fff;
+}
+.info-cell .info-name {
+  flex: 3;
+  font-size: 0.875em;
+  margin-left: 15px;
+  border-bottom: 1px solid #efeff4;
+}
+.info-cell .info-content {
+  flex: 4;
+  text-indent: 10px;
+  border-bottom: 1px solid #efeff4;
+}
+.info-cell .image-cell {
+  dispaly: flex;
+}
+.info-cell .image-cell .imge-block {
+  flex: 1;
+}

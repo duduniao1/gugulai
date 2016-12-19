@@ -1,0 +1,173 @@
+.header {
+  height: 50px;
+  border-bottom: 1px solid #d6d7dc;
+  background: #fff;
+  margin-bottom: 10px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 20px;
+  position: relative;
+}
+.header:before {
+  content: '';
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  display: block;
+  width: 16px;
+  height: 30px;
+  background: url("../../img/header/nav_back_icon@2x.png") no-repeat center;
+  background-size: 100%;
+}
+.link_cell {
+  position: relative;
+  height: 50px;
+  padding-left: 45px;
+  background: #fff url("../../img/content_list_icon01@2x.png") no-repeat left 15px center;
+  background-size: 20px;
+  line-height: 50px;
+  margin-bottom: 10px;
+}
+.link_cell:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  display: block;
+  width: 16px;
+  height: 30px;
+  margin-top: -15px;
+  background: url("../../img/content_list_right_icon@2x.png") no-repeat center;
+  background-size: 50%;
+}
+* {
+  margin: 0;
+}
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  padding-left: 0;
+  display: flex;
+  list-style: none;
+  text-align: center;
+  line-height: 75px;
+  background: #fff;
+  color: #92908f;
+  font-size: 14px;
+}
+.footer .footer_cell {
+  flex: 5;
+  float: left;
+  position: relative;
+}
+.footer .footer_cell .footer_cell_warning {
+  display: none;
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #ea5404;
+  color: #fff;
+  font-size: 14px;
+  line-height: 15px;
+  top: 2px;
+  right: 20px;
+}
+.footer .first {
+  background: url("../../img/footer/bottom_nor_icon04@2x.png") no-repeat bottom 24px center;
+  background-size: 30%;
+}
+.footer .ordered {
+  background: url("../../img/footer/bottom_nor_icon03@2x.png") no-repeat bottom 24px center;
+  background-size: 30%;
+}
+.footer .add {
+  background: url("../../img/footer/bottom_icon05@2x.png") no-repeat center;
+  background-size: 70%;
+}
+.footer .message {
+  background: url("../../img/footer/bottom_nor_icon02@2x.png") no-repeat bottom 24px center;
+  background-size: 30%;
+}
+.footer .me {
+  background: url("../../img/footer/bottom_nor_icon01@2x.png") no-repeat bottom 24px center;
+  background-size: 30%;
+}
+body {
+  background: #efeff4;
+  font-family: Microsoft Yahei;
+  margin: 0;
+  padding: 0;
+}
+body .header:after {
+  content: '';
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  display: block;
+  width: 16px;
+  height: 30px;
+  background: url("../../img/nav_set_icon@2x.png") no-repeat center;
+  background-size: 100%;
+}
+body .login_box {
+  position: relative;
+  display: flex;
+  height: 95px;
+  padding: 0 15px;
+  background: #fff;
+  border-bottom: 1px #d6d7dc solid;
+}
+body .login_box .login_img {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  width: 64px;
+  height: 64px;
+  margin-top: -32px;
+  border-radius: 50%;
+  background: url("../../img/log in_user-head@2x.png") no-repeat center;
+  background-size: cover;
+}
+body .login_box .login_con {
+  flex: 1;
+  padding-left: 80px;
+  line-height: 95px;
+}
+.s_box {
+  display: flex;
+  height: 45px;
+  background: #fff;
+  text-align: center;
+  line-height: 45px;
+}
+.s_left {
+  flex: 1;
+}
+.s_left:after {
+  content: '';
+  display: block;
+  float: right;
+  height: 30px;
+  border-right: 1px solid #d6d7dc;
+  margin-top: 7px;
+}
+.s_right {
+  flex: 1;
+  float: right;
+}
+.s_number {
+  font-size: 20px;
+  font-weight: bolder;
+}
+.needs {
+  margin-top: 10px;
+}
+.footer .me {
+  background: url("../../img/footer/bottom_press_icon01@2x.png") no-repeat bottom 20px center;
+  background-size: 30%;
+  color: #ea5404;
+}

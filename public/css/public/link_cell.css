@@ -1,0 +1,21 @@
+.link_cell {
+  position: relative;
+  height: 50px;
+  padding-left: 45px;
+  background: #fff url("../../img/content_list_icon01@2x.png") no-repeat left 15px center;
+  background-size: 20px;
+  line-height: 50px;
+  margin-bottom: 10px;
+}
+.link_cell:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  display: block;
+  width: 16px;
+  height: 30px;
+  margin-top: -15px;
+  background: url("../../img/content_list_right_icon@2x.png") no-repeat center;
+  background-size: 50%;
+}

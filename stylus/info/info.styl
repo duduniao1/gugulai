@@ -1,0 +1,80 @@
+@import "../public/header.styl"
+@import "../public/link_cell.styl"
+@import "../public/footer.styl"
+body
+  background #efeff4
+  font-family Microsoft Yahei
+  margin 0
+  padding 0
+
+  .header
+    &:after
+      content ''
+      position absolute
+      right 15px
+      top 15px
+      display block
+      width 16px
+      height 30px
+      background url("../../img/nav_set_icon@2x.png") no-repeat center
+      background-size 100%
+
+  .login_box
+    position relative
+    display flex
+    height 95px
+    padding 0 15px
+    background white
+    border-bottom 1px #d6d7dc solid
+
+    .login_img
+      position: absolute
+      top 50%
+      left 15px
+      width 64px
+      height 64px
+      margin-top -32px
+      border-radius 50%
+      background url("../../img/log in_user-head@2x.png") no-repeat center
+      background-size cover
+
+    .login_con
+      flex 1
+      padding-left 80px
+      line-height 95px
+
+
+.s_box
+  display flex
+  height 45px
+  background white
+  text-align center
+  line-height 45px
+
+ .s_left
+   flex 1
+
+  .s_left:after
+    content ''
+    display block
+    float right
+    height 30px
+    border-right 1px solid #d6d7dc
+    margin-top 7px
+
+ .s_right
+   flex 1
+   float right
+
+ .s_number
+   font-size 20px
+   font-weight bolder
+
+ .needs
+   margin-top 10px
+
+ .footer
+  .me
+   background url("../../img/footer/bottom_press_icon01@2x.png") no-repeat bottom 20px center
+   background-size 30%
+   color #EA5404

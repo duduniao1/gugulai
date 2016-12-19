@@ -1,0 +1,27 @@
+.header {
+  display: flex;
+  height: 50px;
+  background: #fff;
+  margin-bottom: 10px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 20px;
+}
+.header .icon-back {
+  flex: 1;
+  display: block;
+  width: 50px;
+  content: '';
+  position: absolute;
+  left: 15px;
+  top: 0;
+  font-size: 18px;
+  line-height: 50px;
+  background: transparent url("../../img/nav_icon_down@2x.png") no-repeat right;
+  background-size: 10px;
+  text-align: left;
+}
+.header .header_little {
+  flex: 1;
+  text-align: center;
+}

@@ -1,0 +1,287 @@
+@import "../public/footer.styl"
+@import "../index/header.styl"
+body
+  color #646464
+  ul
+    list-style none
+    padding 0
+.header
+  position absolute
+  top 0
+  left 0
+  right 0
+  z-index 5
+  color #fff
+  background-color transparent
+  background url("../../img/banner_img_shadow@2x.png") no-repeat center bottom 4px
+  &.active
+    background-color #3c3c3b
+  .icon-back
+    font-style normal
+  .search_title_box
+    display none
+    width 212px
+    position absolute
+    top 50%
+    left 50%
+    margin-top -15px
+    margin-left -106px
+    z-index 5
+    .title_input
+      width 100%
+      height 30px
+      border-radius 3px
+      background-color #f1f1f1
+      text-align center
+      line-height 34px
+      color #999
+    .icon_title_search
+      display inline-block
+      width 30px
+      height 30px
+      background url("../../img/banner_icon_search@2x.png") no-repeat center
+      background-size 16px
+      vertical-align bottom
+
+.footer
+  .active
+    background url("../../img/footer/bottom_press_icon04@2x.png") no-repeat bottom 24px center
+    background-size 30%
+    color #EA5404
+.search_box
+  position absolute
+  top 65px
+  right 15px
+  left 15px
+  z-index 5
+  .search_input
+    height 34px
+    border-radius 3px
+    background-color #f1f1f1
+    text-align center
+    line-height 34px
+    color #999
+    .icon-search
+      display inline-block
+      width 30px
+      height 30px
+      background url("../../img/banner_icon_search@2x.png") no-repeat center
+      background-size 16px
+      vertical-align bottom
+
+.slider_box
+  width 100%
+  height 320px
+  overflow hidden
+  .slider_container
+    width 600%
+    height 320px
+    transition all .5s
+    transform translateX(0)
+    &:after
+      content ''
+      display block
+      visibility hidden
+      height 0
+      clear both
+    .slider_block
+      z-index 2
+      float left
+      width 375px
+      height 320px
+      background url("../../img/banner_img@2x.png") no-repeat center
+      background-size 100%
+      &:nth-child(2)
+        background url("../../img/banner_img@2x.png") no-repeat center
+        background-size 100%
+      &:nth-child(3)
+        background url("../../img/banner_img@2x.png") no-repeat center
+        background-size 100%
+      &:nth-child(4)
+        background url("../../img/banner_img@2x.png") no-repeat center
+        background-size 100%
+      &:nth-child(5)
+        background url("../../img/banner_img@2x.png") no-repeat center
+        background-size 100%
+  .point_box
+    position relative
+    bottom 10%
+    left 10px
+    z-index 5
+    text-align center
+    .point_block
+      display inline-block
+      width 16px
+      height 16px
+      background url("../../img/banner_icon_point_nor@2x.png") no-repeat center
+      background-size 10px
+      &.active
+        background url("../../img/banner_icon_point_press@2x.png") no-repeat center
+        background-size 10px
+.query_box
+
+  display flex
+  height 44px
+  border-bottom 1px solid #d6d7dc
+  &.active
+    margin-top 50px
+  .query_price
+    flex 2
+    height 44px
+    background url("../../img/content_icon01_nor@2x.png") no-repeat center
+    background-size 40%
+    &.active-down
+      background url("../../img/content_icon01_down@2x.png") no-repeat center
+      background-size 40%
+    &.active-up
+      background url("../../img/content_icon01_litre@2x.png") no-repeat center
+      background-size 40%
+  .query_block
+    flex 3
+    &.active
+      color #EA5404
+      .text
+        background url("../../img/content_icon02_press@2x.png") no-repeat bottom
+        background-size 11%
+
+    .text
+      display block
+      border-right 1px solid #d6d7dc
+      height 24px
+      margin 10px 0
+      background url("../../img/content_icon02_nor@2x.png") no-repeat center bottom
+      background-size 11%
+      line-height  14px
+      text-align center
+      &.active-down
+        background url("../../img/content_icon01_down@2x.png") no-repeat center
+        background-size 30px
+      &.active-up
+        background url("../../img/content_icon01_litre@2x.png") no-repeat center
+        background-size 30px
+.down-box
+  display flex
+  .down_cell
+    display none
+    height 410px
+    overflow auto
+    background #f0f0f0
+    flex 1
+    text-align center
+  .list_area
+    background #fff
+    .area_cell_area
+      display none
+      .area_list
+        padding-left 15px
+        text-align left
+        height 45px
+        line-height 45px
+        border-bottom 1px solid #e1e1e1
+        .title
+          color #EA5404
+  .down_cell
+    .area
+      padding-left 15px
+      text-align left
+      height 46px
+      line-height 46px
+    .active
+      height 45px
+      line-height 45px
+      background #fff
+  .price
+      .area
+        width 100%
+        text-align center
+        padding 0
+      .price_box
+        position relative
+        bottom 0
+        width 370px
+        height 30px
+        display flex
+        text-align right
+        div
+          flex 4
+        input
+          flex 3
+          width 70px
+          border-radius 4px
+          line-height 30px
+          border 1px solid #d7d8dd
+        .price_line
+          flex 2
+          display inline-block
+          position relative
+          width 20px
+          height 2px
+          margin 0 12px
+          top 10px
+          border-bottom 1px solid #d7d8dd
+        .btn01
+          flex 2
+          height 30px
+          background #fff
+          border 1px solid #d7d8dd
+          border-radius 4px
+          line-height 30px
+          font-size 0.8rem
+          margin 0 20px 0 12px
+
+.block_box
+  display flex
+  padding 15px
+  background-color #fff
+  font-size 16px
+  &.active
+    .info-price
+      a
+        display block
+  .img_box
+    flex 2
+    background url("../../img/content_img_list@2x.png") no-repeat center
+    background-size 100%
+    margin-right 22px
+  .info_box
+    flex 5
+  .info-title
+    color #323232
+    background url("../../img/collect_icon_nor@2x.png") no-repeat right
+    background-size 8%
+    &.active
+      background url("../../img/collect_icon_press@2x.png") no-repeat right
+      background-size 8%
+  .info-address
+    font-size 0.8em
+  .info-tag_box
+    width 4.5em
+    text-align center
+    height 16px
+    border 1px solid #ea5404
+    border-radius 4px
+    color #ea5404
+  .info-price
+    display flex
+    font-size 0.8rem
+    a
+      display none
+      flex 1
+      text-align right
+    span
+      flex 1
+      text-align left
+      em
+        font-style normal
+        color #ea5404
+        font-size 1rem
+
+.mask
+  display none
+  position absolute
+  z-index 3
+  top 0
+  left 0
+  right 0
+  bottom 0
+  background rgba(0,0,0,0.3)

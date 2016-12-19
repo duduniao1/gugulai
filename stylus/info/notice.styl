@@ -1,0 +1,36 @@
+@import "../public/message_header.styl"
+@import "../public/footer.styl"
+*
+  outline 0
+  margin 0
+  padding 0
+body
+  background #efefef
+  color #727272
+  font-size 12px
+  height 667px
+  overflow hidden
+
+.header_box
+  .active
+    background #EA5404
+    color #fff
+
+.header_cell
+  &:last-child:after
+    content '3'
+    position absolute
+    display: block
+    top -8px
+    right 14px
+    width 15px
+    height 15px
+    font-size 0.8rem
+
+.footer
+  .message
+    background url("../../img/footer/bottom_press_icon02@2x.png") no-repeat bottom 20px center
+    background-size 30%
+    color #EA5404
+    .footer_cell_warning
+      display block

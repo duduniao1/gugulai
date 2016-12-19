@@ -1,0 +1,80 @@
+.header {
+  height: 50px;
+  border-bottom: 1px solid #d6d7dc;
+  background: #fff;
+  margin-bottom: 10px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 20px;
+  position: relative;
+}
+.header:before {
+  content: '';
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  display: block;
+  width: 16px;
+  height: 30px;
+  background: url("../../img/header/nav_back_icon@2x.png") no-repeat center;
+  background-size: 100%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background: #efeff4;
+}
+.header_login {
+  color: #ea5404;
+  font-weight: bolder;
+}
+article {
+  margin-top: 20px;
+}
+article section {
+  display: flex;
+  height: 48px;
+  background: #fff url("../../../public/img/content_ID_icon@2x.png") no-repeat left 12px center;
+  background-size: 6%;
+  border-bottom: 1px solid #d6d7dc;
+}
+article section span {
+  flex: 1;
+  text-align: right;
+  line-height: 48px;
+  font-weight: bolder;
+}
+article section input {
+  flex: 3;
+  border: none;
+  outline: none;
+  margin-left: 10px;
+  font-size: 14px;
+}
+.login_box {
+  display: flex;
+  margin-top: 44px;
+}
+.login_box .login_box_login {
+  width: 351px;
+  height: 44px;
+  background: #c7c7c7;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bolder;
+  border-radius: 5px;
+  border: 0;
+  margin: 0 auto;
+  outline: none;
+}
+.login_box .login_box_register {
+  color: #ff8a00;
+  flex: 1;
+  text-align: right;
+  font-weight: bolder;
+}
+.login_box .login_box_forget {
+  flex: 5;
+  text-align: right;
+  color: #646464;
+}

@@ -1,0 +1,154 @@
+@import "../index/header.styl"
+@import "../public/footer.styl"
+body
+  background-color #efeff4
+  font-family SimHei
+  line-height 1.5rem
+  input
+    border-style none
+  i
+    font-style normal
+  ul
+    margin-bottom 20px
+    list-style none
+    background #fff
+    padding 0.9rem
+.header
+  background #fff
+  color #323232
+  font-size 20px
+  font-weight bold
+  .icon-back
+    font-style normal
+    font-weight normal
+    font-size 16px
+
+.info
+  .build_cell
+    margin-left 2.5rem
+    display flex
+    .build_content
+      flex 1
+      font-size 0.8rem
+      color #bababa
+      border-bottom 1px solid #d6d7dc
+      margin-right 1rem
+    .build_cell_title
+      font-size 0.8rem
+  .build_title
+    position relative
+    font-size 1rem
+
+    p
+      margin-left 1.1rem
+      color #646464
+      //font-weight bold
+    .point
+      position absolute
+      width 6px
+      height 6px
+      top 50%
+      left 0
+      margin-top -3px
+      background #bee949
+      border-radius 50%
+      &.point_blue
+        background #49cde9
+  .special
+    margin-left 0.9rem
+.house_style
+  display inline-block
+  .box_point
+    display inline-block
+    width 4px
+    height 4px
+    border-radius 50%
+    padding 1px
+    border 1px solid #ea5404
+    margin-right 0.5rem
+    .box_point_cell
+      display none
+      width 4px
+      height 4px
+      border-radius 50%
+      background #ea5404
+      &.active
+        display block
+.house_info
+  li
+    margin-bottom 0.5em
+  .build_title
+    .house_style
+      font-size 0.8rem
+      float left
+      margin-right 1.5rem
+      color #bababa
+      &:nth-child(1)
+        margin-left 1.1rem
+      &:nth-child(5)
+        margin-left 1.1rem
+    &:after
+      content ''
+      display block
+      height 0
+      clear both
+      visibility:hidden
+    .house_cell
+      margin-left 0.9rem
+      font-size 0.8rem
+
+  .house_cell
+    font-size 0.8rem
+    display flex
+    .house_cell_title
+      color #bababa
+      margin-right 1em
+    .house_style
+      margin-left 1em
+     input
+       padding-left 0.8em
+       font-size 1em
+       background-color #efeff4
+       border-radius 2px
+       border 1px solid #e1e1e1
+    &.select_list
+      color #000
+      position relative
+      .select_pay_list
+        position absolute
+        display none
+        width 82%
+        top 24px
+        right 0
+        &.active
+          display block
+        .select_pay_cell
+          padding-left 0.8em
+          background-color #efeff4
+          &.active
+            background-color #fff
+      .select_pay
+        padding-left 0.8em
+        flex 1
+        background-color #efeff4
+        border 1px solid #e1e1e1
+        &:before
+        &:after
+          content ''
+          position absolute
+          top 6px
+          right 23px
+          display block
+          width 2px
+          height 12px
+          background-color #ababab
+          transform rotate(-45deg)
+        &:after
+          right 15px
+          transform rotate(45deg)
+
+
+
+
+
+

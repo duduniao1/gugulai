@@ -1,0 +1,30 @@
+body {
+  color: #fff;
+  font-size: 30px;
+}
+@media all and (min-width: 500px) {
+  body {
+    background: #ff0;
+  }
+}
+@media (max-width: 480px) and (min-width: 320px) {
+  body {
+    background: #f00;
+  }
+}
+@media (max-width: 320px) {
+  body {
+    background: #00f;
+  }
+}
+.md {
+  background: #7fff00;
+  width: 100%;
+  height: 200px;
+}
+.md:before {
+  content: '1';
+}
+.md:after {
+  content: '0';
+}

@@ -1,0 +1,97 @@
+.message_header
+  height 30px
+  border-bottom 1px solid #d6d7dc
+  background #fff
+  text-align center
+  font-size 16px
+  padding 14px 0 6px 0
+  position relative
+  .header_box
+    height 28px
+    display flex
+    list-style none
+    margin 0 60px
+    padding 0
+    border-radius 5px
+    border 1px solid #EA5404
+.header_cell
+  flex 1
+  color #EA5404
+  line-height 27px
+  margin 0 auto
+  position relative
+
+
+  &:first-child:after
+    content ''
+    position absolute
+    display block
+    border-right 1px solid #EA5404
+    height 28px
+    top 0
+    right 0
+  &:last-child:before
+    content ''
+    position absolute
+    display block
+    border-right 1px solid #EA5404
+    height 28px
+    top 0
+    left 0
+
+.tab_cell
+  margin 14px 13px 0 13px
+  border-radius 5px
+  box-shadow 0 0 3px 2px #e0e0e0
+  min-height 115px
+  background #fff
+  .tab_title
+    border-bottom 1px solid #d6d7dc
+    height 36px
+    line-height 36px
+    display flex
+    padding 0 13px
+    span
+      flex 6
+      text-align left
+      font-weight bolder
+    a
+      flex 1
+      text-align right
+
+  .tab_section
+    padding 0 13px
+
+    p
+      text-indent:1em
+      font-weight normal
+      font-size 0.8rem
+      line-height 1rem
+      margin-bottom 0
+    a
+      font-size 0.9rem
+    .times
+      text-align right
+    button
+      flex 1
+      border 1px solid #e1e1e1
+      background #EFEFF4
+
+  .tab_title
+    .status
+      height 20px
+      width 22px
+      font-size 0.8rem
+      text-align center
+      line-height 24px
+      margin 8px 0
+      border-radius 4px
+      color #fff
+    .tenant
+      background #15B755
+    .agent
+      background #0193E6
+    .periodica
+      background #97B715
+    .agency
+      background #EA5404
