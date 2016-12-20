@@ -18,7 +18,7 @@ var publicPath=path.join(__dirname,'public');
 app.use('/public',express.static(publicPath));
 //监听端口9999,用来启动服务
 app.get('/login',function(req,res){
-	res.send('ha ni ma')
+	res.send('hei')
 });
 app.listen(16924,function(){
 	console.log('server run at port 16924')
