@@ -13,12 +13,16 @@ $('.header-conf').on('tap', function(){
 		$('.cancel-alert' ).hide();
 		$('.publish-alert' ).show();
 	});
-	$('.cancel' ).on('tap', function(){
+
+	$('.cancel').on('tap', function(){
 		$('.mask' ).hide();
 		$('.cancel-alert' ).hide();
 	})
 });
-
+$('.sure').on('tap', function(){
+	$('.mask' ).hide();
+	$('.cancel-alert' ).hide();
+});
 
 $('.tel-icon').on('tap', function(){
 	$('.mask' ).show();

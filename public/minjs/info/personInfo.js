@@ -1,0 +1,1 @@
+$(".icon_back").on("tap",function(){history.back()});

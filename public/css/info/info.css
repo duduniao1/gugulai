@@ -8,7 +8,7 @@
   font-size: 20px;
   position: relative;
 }
-.header:before {
+.header #icon_back {
   content: '';
   position: absolute;
   left: 15px;
@@ -76,23 +76,23 @@
   top: 2px;
   right: 20px;
 }
-.footer .first {
+.footer #first {
   background: url("../../img/footer/bottom_nor_icon04@2x.png") no-repeat bottom 24px center;
   background-size: 30%;
 }
-.footer .ordered {
+.footer #ordered {
   background: url("../../img/footer/bottom_nor_icon03@2x.png") no-repeat bottom 24px center;
   background-size: 30%;
 }
-.footer .add {
+.footer #add {
   background: url("../../img/footer/bottom_icon05@2x.png") no-repeat center;
   background-size: 70%;
 }
-.footer .message {
+.footer #messages {
   background: url("../../img/footer/bottom_nor_icon02@2x.png") no-repeat bottom 24px center;
   background-size: 30%;
 }
-.footer .me {
+.footer #me {
   background: url("../../img/footer/bottom_nor_icon01@2x.png") no-repeat bottom 24px center;
   background-size: 30%;
 }
@@ -166,7 +166,7 @@ body .login_box .login_con {
 .needs {
   margin-top: 10px;
 }
-.footer .me {
+.footer #me {
   background: url("../../img/footer/bottom_press_icon01@2x.png") no-repeat bottom 20px center;
   background-size: 30%;
   color: #ea5404;
