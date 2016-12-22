@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+	<title>粤淘网 - 杭州摆摆网络科技有限公司</title>
+	<meta name="keywords" content="杭州摆摆网络科技有限公司"/>
+	<meta name="description" content="杭州摆摆网络科技有限公司是一家互联网制作及设计的现代设计公司
+    摆摆网络将市场定位于以企业互联网电子商务平台及企业信息化建设为基点，提供全方位的设计与应用方案。以网站建设及网络营销整合作为其主打服务产品之外，摆摆网络的服务范围包括软件开发、平面设计、界面设计、网页设计等多方位优质服务。 "/>
+	<link href="http://cdn.bootcss.com/normalize/5.0.0/normalize.css" rel="stylesheet">
+	<link rel="stylesheet" href="../../public/css/release/release_demand.css">
+</head>
+<body>
+	<header class="header">
+		<span class="icon-back">取消</span>
+		<span class="header-title">发布需求</span>
+		<span class="header-publish">发布</span>
+	</header>
+
+	<article class="form-cells">
+		<section class="form-cell">
+			<input onblur="testVal()" class="form-input input01" type="text" placeholder="周杰伦">
+		</section>
+		<section class="form-cell">
+			<input onblur="testVal()" class="form-input input02" type="text" placeholder="18956214521">
+		</section>
+		<section class="form-cell">
+			<textarea class="form-area" placeholder="描述一下您的需求，比如黄埔100-200m²,5-6元/m²/天，环境好点，底层，临近地铁。"></textarea>
+		</section>
+	</article>
+
+	<div class="mask"></div>
+
+	<div class="cancel-alert">
+		<p class="title">你确定要退出此次发布？</p>
+		<p class="confirm">
+			<span class="cancel">取消</span>
+			<span class="sure">确定</span>
+		</p>
+	</div>
+
+	<div class="publish-alert">
+		<p class="title">发布需求成功，请稍后</p>
+		<p class="confirm">确定</p>
+	</div>
+
+
+	<script src="../../public/js/libs/neat/neat.min.js"></script>
+	<script src="../../public/js/libs/zepto/touch.js"></script>
+	<script>
+		$('.icon-back' ).on('tap', function(){
+			$('.mask' ).show();
+			$('.cancel-alert' ).show();
+			$('.cancel' ).on('tap', function(){
+				$('.mask' ).hide();
+				$('.cancel-alert' ).hide();
+			});
+			$('.sure' ).on('tap', function(){
+				history.back();
+			})
+		});
+		$('.header-publish' ).on('tap', function(){
+			$('.mask' ).css('background','#A7A7AA').show();
+			$('.publish-alert' ).show();
+
+		})
+	</script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+	<title>粤淘网 - 杭州摆摆网络科技有限公司</title>
+	<meta name="keywords" content="杭州摆摆网络科技有限公司"/>
+	<meta name="description" content="杭州摆摆网络科技有限公司是一家互联网制作及设计的现代设计公司
+    摆摆网络将市场定位于以企业互联网电子商务平台及企业信息化建设为基点，提供全方位的设计与应用方案。以网站建设及网络营销整合作为其主打服务产品之外，摆摆网络的服务范围包括软件开发、平面设计、界面设计、网页设计等多方位优质服务。 "/>
+	<link href="http://cdn.bootcss.com/normalize/5.0.0/normalize.css" rel="stylesheet">
+	<link rel="stylesheet" href="../../public/css/release/plus_house.css">
+</head>
+<body>
+
+	<header class="header">
+		<span class="icon-back" ontouchend="history.back()"></span>
+		<span class="header-title">新增楼盘</span>
+	</header>
+	
+	<article class="form-cells">
+		<section class="form-cell">
+			<input onblur="testVal()" class="form-input input01" type="text" placeholder="输入您想要增加的楼盘">
+		</section>
+		<section class="form-cell">
+			<input onblur="testVal()" class="form-input input02" type="text" placeholder="输入楼盘的地址">
+		</section>
+	</article>
+
+	<div class="submit-block">
+		<input type="submit" class="btn" value="确认提交">
+	</div>
+
+	<div class="mask"></div>
+
+	<div class="publish-alert">
+		<p class="title">提交成功，稍后会有专人与您联系</p>
+		<p class="confirm">确定</p>
+	</div>
+
+	<script src="../../public/js/libs/neat/neat.min.js"></script>
+	<script src="../../public/js/libs/zepto/touch.js"></script>
+	<script>
+	function testVal(){
+		if($('.input01').val() != '' && $('.input02').val() != ''){
+			$('.btn' ).on('tap', function(){
+				$('.mask' ).show();
+				$('.publish-alert' ).show();
+			})
+		}
+
+	}
+
+	</script>
+</body>
+</html>

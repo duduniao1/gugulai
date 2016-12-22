@@ -12,9 +12,20 @@
 </head>
 	<body>
 		<header class="header">
-			<i class="icon-back">上海</i>
+			<i class="icon-back">取消</i>
 			<span class="header_little">发布房源</span>
 		</header>
+		<div class="search-box">
+			<div class="search-block">
+				<i class="search-icon"></i>
+				<input type="text" class="search-input" placeholder="搜索你想要发布的大厦">
+				<span class="close-icon"></span>
+			</div>
+			<div class="add-house">
+				<em class="add-icon"></em>
+				<span class="add-name">新增楼盘</span>
+			</div>
+		</div>
 		<ul class="info build_info">
 			<li class="build_title"><div class="point"></div><p>大厦信息</p></li>
 			<li class="build_cell"><i class="build_cell_title">商圈：</i><span class="build_content">浦东-八佰伴</span></li>
@@ -57,11 +68,28 @@
 			<li class="house_cell"><i class="house_cell_title">付款方式</i><input type="text" value="押三付一"><div class="house_style"><span class="box_point"><a class="box_point_cell"></a></span>是否含发票</div></li>
 			<li class="house_cell"><i class="house_cell_title">是否结佣</i><input type="text" value="一个月"><div class="house_style"><span class="box_point"><a class="box_point_cell"></a></span>是</div></li>
 			<li class="house_cell"><i class="house_cell_title">装修免租</i><input type="text" value="一个月"></li>
-			<li class="house_cell"><i class="house_cell_title">看房时间</i><input type="text" value="8:00"><input type="text" value="20:00"></li>
-			<li class="house_cell"><i class="house_cell_title">房源简介</i><textarea name="" id="" cols="30" rows="3"></textarea></li>
-			<li class="house_picture"><div></div>content_plus_icon@2x.png</li>
+			<li class="house_cell house_in"><i class="house_cell_title">看房时间</i><input type="text" value="8:00"><div></div><input type="text" value="20:00"></li>
+			<li class="house_cell house_in"><i class="house_cell_title">房源简介</i><textarea  class="text_area"></textarea></li>
+			<li class="house_picture"><div></div>
+					<div class="upload-block">
+						<span class="add-icon"></span>
+						<span class="name">添加图片</span>
+						<input type="file" class="file">
+					</div></li>
 		</ul>
-		<div><button>确认发布</button></div>
+		<footer class="footer_bar"><div class="release-block"><div class="release-btn">确定发布</div>
+			</div>
+		</footer>
+		<div class="mask"></div>
+		<div class="cancel_alert">
+			<p class="title">你确定要退出此次发布？</p><p class="confirm">
+				<span class="cancel">取消</span><span class="sure">确定</span>
+			</p>
+		</div>
+		<div class="release_alert">
+			<p class="title">房源发布成功，请稍后！</p><p class="confirm">确定</p>
+		</div>
+
 		<script src="../../public/minjs/index/zepto.min.js"></script>
 		<script src="../../public/js/release/release.js"></script>
 		<script src="../../public/js/libs/zepto/touch.js"></script>

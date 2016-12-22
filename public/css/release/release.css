@@ -81,6 +81,74 @@
   background: url("../../img/footer/bottom_nor_icon01@2x.png") no-repeat bottom 24px center;
   background-size: 30%;
 }
+.mask {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+.cancel_alert {
+  display: none;
+  width: 270px;
+  background: #fff;
+  border-radius: 10px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  margin-top: -53px;
+  margin-left: -135px;
+  text-align: center;
+}
+.cancel_alert .title {
+  height: 62px;
+  line-height: 62px;
+  border-bottom: 1px solid #e1e1e1;
+  margin: 0;
+  font-size: 14px;
+}
+.cancel_alert .confirm {
+  color: #ea5404;
+  display: flex;
+  height: 45px;
+  line-height: 45px;
+  margin: 0;
+}
+.cancel_alert .confirm span {
+  flex: 1;
+  text-align: center;
+}
+.cancel_alert .confirm .cancel {
+  border-right: 1px solid #d6d7dc;
+  color: #323232;
+}
+.release_alert {
+  display: none;
+  width: 270px;
+  background: #fff;
+  border-radius: 10px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  margin-top: -53px;
+  margin-left: -135px;
+  text-align: center;
+}
+.release_alert .title {
+  height: 62px;
+  line-height: 62px;
+  border-bottom: 1px solid #e1e1e1;
+  margin: 0;
+  font-size: 14px;
+}
+.release_alert .confirm {
+  color: #ea5404;
+  line-light: 45px;
+}
 body {
   background-color: #efeff4;
   font-family: SimHei;
@@ -108,6 +176,61 @@ body ul {
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
+}
+.search-box {
+  display: flex;
+  padding: 13px 12px;
+}
+.search-box .search-block {
+  flex: 5;
+  position: relative;
+}
+.search-box .search-block .search-input {
+  width: 85%;
+  padding: 7px 0 7px 2rem;
+  font-size: 14px;
+  border: 1px solid #d6d7dc;
+  border-radius: 3px;
+}
+.search-box .search-block .search-icon {
+  width: 13px;
+  height: 13px;
+  display: block;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: url("../../img/content_search_icon@2x.png") no-repeat center;
+  background-size: 100%;
+}
+.search-box .search-block .close-icon {
+  width: 15px;
+  height: 15px;
+  display: block;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: url("../../img/content_delet_icon@2x.png") no-repeat center;
+  background-size: 100%;
+  display: none;
+}
+.search-box .search-block .close-icon.active {
+  background: url("../../img/content_img_close_icon@2x.png") no-repeat center;
+  background-size: 100%;
+}
+.search-box .add-house {
+  flex: 2;
+  margin-left: 10px;
+  line-height: 30px;
+}
+.search-box .add-house .add-icon {
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+  background: url("../../img/content_plus_icon@2x.png") no-repeat center;
+  background-size: 100%;
+}
+.search-box .add-house .add-name {
+  font-size: 14px;
 }
 .info .build_cell {
   margin-left: 2.5rem;
@@ -255,4 +378,66 @@ body ul {
 .house_info .house_cell.select_list .select_pay:after {
   right: 15px;
   transform: rotate(45deg);
+}
+.house_info .house_in {
+  display: flex;
+}
+.house_info .house_in input {
+  flex: 5;
+  text-align: center;
+}
+.house_info .house_in div {
+  flex: 3;
+}
+.house_info .house_in .text_area {
+  display: inline-block;
+  flex: 5;
+  height: 75px;
+  padding: 0;
+  background-color: #efeff4;
+  border: 1px solid #e1e1e1;
+  border-radius: 5px;
+}
+.house_info .house_picture {
+  width: 75px;
+  height: 75px;
+  background-color: #d4d4d9;
+  text-align: center;
+  margin-top: 60px;
+  margin-left: 10px;
+  font-size: 14px;
+}
+.house_info .house_picture .upload-block {
+  padding-top: 20px;
+  position: relative;
+}
+.house_info .house_picture .upload-block .add-icon {
+  width: 24px;
+  height: 24px;
+  display: block;
+  background: url("../../img/content_plus_icon@2x.png") no-repeat center;
+  margin-left: 24px;
+}
+.house_info .house_picture .upload-block .file {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+}
+.footer_bar {
+  height: 60px;
+  background-color: #fff;
+}
+.footer_bar .release-block {
+  padding-top: 10px;
+}
+.footer_bar .release-block .release-btn {
+  width: 90%;
+  margin: 0 auto;
+  background: #ea5404;
+  padding: 10px 0;
+  text-align: center;
+  color: #fff;
+  border-radius: 5px;
 }

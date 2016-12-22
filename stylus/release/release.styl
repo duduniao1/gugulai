@@ -1,5 +1,6 @@
 @import "../index/header.styl"
 @import "../public/footer.styl"
+@import "../public/mask.styl"
 body
   background-color #efeff4
   font-family SimHei
@@ -22,6 +23,53 @@ body
     font-style normal
     font-weight normal
     font-size 16px
+.search-box
+  display flex
+  padding 13px 12px
+
+  .search-block
+    flex 5
+    position relative
+    .search-input
+      width 85%
+      padding 7px 0 7px  2rem
+      font-size 14px
+      border 1px solid #d6d7dc
+      border-radius 3px
+    .search-icon
+      width 13px
+      height 13px
+      display block
+      position absolute
+      top 10px
+      left 10px
+      background url(../../img/content_search_icon@2x.png) no-repeat center
+      background-size 100%
+    .close-icon
+      width 15px
+      height 15px
+      display block
+      position absolute
+      top 10px
+      right 10px
+      background url(../../img/content_delet_icon@2x.png) no-repeat center
+      background-size 100%
+      display none
+      &.active
+        background url(../../img/content_img_close_icon@2x.png) no-repeat center
+        background-size 100%
+  .add-house
+    flex 2
+    margin-left 10px
+    line-height 30px
+    .add-icon
+      width 12px
+      height 12px
+      display inline-block
+      background url(../../img/content_plus_icon@2x.png) no-repeat center
+      background-size 100%
+    .add-name
+      font-size 14px
 
 .info
   .build_cell
@@ -146,9 +194,56 @@ body
         &:after
           right 15px
           transform rotate(45deg)
-
-
-
-
+  .house_in
+    display flex
+    input
+      flex 5
+      text-align center
+    div
+      flex 3
+    .text_area
+      display inline-block
+      flex 5
+      height 75px
+      padding 0
+      background-color #efeff4
+      border 1px solid #e1e1e1
+      border-radius 5px
+  .house_picture
+    width 75px
+    height 75px
+    background-color #d4d4d9
+    text-align center
+    margin-top 60px
+    margin-left 10px
+    font-size 14px
+    .upload-block
+      padding-top 20px
+      position relative
+      .add-icon
+        width 24px
+        height 24px
+        display block
+        background url(../../img/content_plus_icon@2x.png) no-repeat center
+        margin-left 24px
+      .file
+        position absolute
+        top 50%
+        left 0
+        width 100%
+        opacity 0
+.footer_bar
+  height 60px
+  background-color #fff
+  .release-block
+    padding-top 10px
+    .release-btn
+      width 90%
+      margin 0 auto
+      background #ea5404
+      padding 10px 0
+      text-align center
+      color #fff
+      border-radius 5px
 
 
