@@ -146,3 +146,59 @@ body {
   background-color: #ff3b30;
   display: none;
 }
+* {
+  margin: 0;
+}
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  padding-left: 0;
+  display: flex;
+  list-style: none;
+  text-align: center;
+  line-height: 75px;
+  background: #fff;
+  color: #92908f;
+  font-size: 14px;
+}
+.footer .footer_cell {
+  flex: 5;
+  float: left;
+  position: relative;
+}
+.footer .footer_cell .footer_cell_warning {
+  display: none;
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #ea5404;
+  color: #fff;
+  font-size: 14px;
+  line-height: 15px;
+  top: 2px;
+  right: 20px;
+}
+.footer #first {
+  background: url("../../img/footer/bottom_nor_icon04@2x.png") no-repeat bottom 24px center;
+  background-size: 30%;
+}
+.footer #ordered {
+  background: url("../../img/footer/bottom_nor_icon03@2x.png") no-repeat bottom 24px center;
+  background-size: 30%;
+}
+.footer #add {
+  background: url("../../img/footer/bottom_icon05@2x.png") no-repeat center;
+  background-size: 70%;
+}
+.footer #messages {
+  background: url("../../img/footer/bottom_nor_icon02@2x.png") no-repeat bottom 24px center;
+  background-size: 30%;
+}
+.footer #me {
+  background: url("../../img/footer/bottom_nor_icon01@2x.png") no-repeat bottom 24px center;
+  background-size: 30%;
+}
