@@ -44,7 +44,8 @@ $house_style.on('tap',function(){
 
 $('.release-block').on('tap', function(){
 	$('.mask' ).show();
-	$('.release-alert' ).show();
+	$('.release_alert' ).show();
+	//$('.mask' ).show();
 	$('.confirm' ).on('tap', function(){
 		location.href = '../release/release_detail.html'
 	})
@@ -52,13 +53,16 @@ $('.release-block').on('tap', function(){
 
 $('.icon-back').on('tap', function(){
 	$('.mask' ).show();
-	$('.cancel-alert' ).show();
+	$('.cancel_alert' ).show();
 	$('.cancel' ).on('tap', function(){
 		$('.mask' ).hide();
-		$('.cancel-alert' ).hide();
+		$('.cancel_alert' ).hide();
 	});
 	$('.sure' ).on('tap', function(){
 		location.href = '../release/release_detail.html'
+	});
+	$('.no_true').on('tap',function(){
+		location.href = '../release/publish.html'
 	})
 });
 

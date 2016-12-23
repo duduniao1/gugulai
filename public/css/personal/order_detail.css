@@ -244,6 +244,9 @@ body {
   height: 145px;
   opacity: 0;
 }
+.upload -alert {
+  display: none;
+}
 .mask {
   display: none;
   width: 100%;

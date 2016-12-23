@@ -26,10 +26,14 @@ $('.sure').on('tap', function(){
 
 $('.tel-icon').on('tap', function(){
 	$('.mask' ).show();
-	$('.cancel-alert' ).show();
+	$('.cancel_alert' ).show();
+	$('.sure').on('tap', function(){
+		$('.mask' ).hide();
+		$('.cancel_alert' ).hide();
+	});
 	$('.cancel' ).on('tap', function(){
 		$('.mask' ).hide();
-		$('.cancel-alert' ).hide();
+		$('.cancel_alert' ).hide();
 	})
 });
 //预约看房成功
@@ -70,10 +74,10 @@ $('.upload-conf').on('tap', function(){
 });
 $('.cancel-upload').on('tap', function(){
 	$('.mask' ).show();
-	$('.cancel-alert' ).show();
+	$('.cancel_alert' ).show();
 	$('.cancel' ).on('tap', function(){
 		$('.mask' ).hide();
-		$('.cancel-alert' ).hide();
+		$('.cancel_alert' ).hide();
 	});
 	$('.sure' ).on('tap', function(){
 		history.back();
@@ -96,14 +100,14 @@ $('.cancel_btn').on('tap', function(){
 //弹出输入时间框
 $('.time-house' ).on('tap', function(){
 	$('.mask' ).show();
-	$('.cancel-alert' ).show();
+	$('.cancel_alert' ).show();
 	$('.cancel' ).on('tap', function(){
 		$('.mask' ).hide();
-		$('.cancel-alert' ).hide();
+		$('.cancel_alert' ).hide();
 	});
 	$('.sure' ).on('tap', function(){
 		$('.mask' ).hide();
-		$('.cancel-alert' ).hide();
+		$('.cancel_alert' ).hide();
 	})
 });
 //接单按钮
