@@ -53,3 +53,12 @@ app.listen(16924,function(){
 });
 //模块导出
 module.exports=app;
+app.use('/api',proxy({
+    target: 'http://guanjp.com:9805',
+    changeOrigin: true,
+    ws: true,
+    cookieRewrite: true,
+    pathRewrite: {
+        '^/api': '/'
+    }
+}));

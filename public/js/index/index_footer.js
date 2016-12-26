@@ -9,3 +9,12 @@ personal.addEventListener('touchend',function(){
 first.addEventListener('touchend',function(){
     location.href = '../index/index.html'
 });
+add.addEventListener('touchend',function(){
+    location.href = '../info/index.html'
+});
+messages.addEventListener('touchend',function(){
+    location.href = '../info/message.html'
+});
+ordered.addEventListener('touchend',function(){
+    location.href = '../personal/order.html'
+})
