@@ -25,6 +25,74 @@ body {
   padding-right: 50px;
   color: #ea5404;
 }
+.mask {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+.cancel_alert {
+  display: none;
+  width: 270px;
+  background: #fff;
+  border-radius: 10px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  margin-top: -53px;
+  margin-left: -135px;
+  text-align: center;
+}
+.cancel_alert .title {
+  height: 62px;
+  line-height: 62px;
+  border-bottom: 1px solid #e1e1e1;
+  margin: 0;
+  font-size: 14px;
+}
+.cancel_alert .confirm {
+  color: #ea5404;
+  display: flex;
+  height: 45px;
+  line-height: 45px;
+  margin: 0;
+}
+.cancel_alert .confirm span {
+  flex: 1;
+  text-align: center;
+}
+.cancel_alert .confirm .cancel {
+  border-right: 1px solid #d6d7dc;
+  color: #323232;
+}
+.release_alert {
+  display: none;
+  width: 270px;
+  background: #fff;
+  border-radius: 10px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  margin-top: -53px;
+  margin-left: -135px;
+  text-align: center;
+}
+.release_alert .title {
+  height: 62px;
+  line-height: 62px;
+  border-bottom: 1px solid #e1e1e1;
+  margin: 0;
+  font-size: 14px;
+}
+.release_alert .confirm {
+  color: #ea5404;
+  line-light: 45px;
+}
 .form-list {
   background-color: #fff;
   margin-top: 20px;
@@ -128,72 +196,4 @@ body {
 }
 .footer a {
   color: #ea5404;
-}
-.mask {
-  display: none;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.5);
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-}
-.cancel_alert {
-  display: none;
-  width: 270px;
-  background: #fff;
-  border-radius: 10px;
-  position: fixed;
-  left: 50%;
-  top: 50%;
-  margin-top: -53px;
-  margin-left: -135px;
-  text-align: center;
-}
-.cancel_alert .title {
-  height: 62px;
-  line-height: 62px;
-  border-bottom: 1px solid #e1e1e1;
-  margin: 0;
-  font-size: 14px;
-}
-.cancel_alert .confirm {
-  color: #ea5404;
-  display: flex;
-  height: 45px;
-  line-height: 45px;
-  margin: 0;
-}
-.cancel_alert .confirm span {
-  flex: 1;
-  text-align: center;
-}
-.cancel_alert .confirm .cancel {
-  border-right: 1px solid #d6d7dc;
-  color: #323232;
-}
-.release_alert {
-  display: none;
-  width: 270px;
-  background: #fff;
-  border-radius: 10px;
-  position: fixed;
-  left: 50%;
-  top: 50%;
-  margin-top: -53px;
-  margin-left: -135px;
-  text-align: center;
-}
-.release_alert .title {
-  height: 62px;
-  line-height: 62px;
-  border-bottom: 1px solid #e1e1e1;
-  margin: 0;
-  font-size: 14px;
-}
-.release_alert .confirm {
-  color: #ea5404;
-  line-light: 45px;
 }
