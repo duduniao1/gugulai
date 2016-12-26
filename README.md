@@ -1,24 +1,24 @@
-* ÏÂÔØ
+* ï¿½ï¿½ï¿½ï¿½
     ``` 
      git clone https://github.com/duduniao1/project_wei.git
     ```
-* ½øÈëÄ¿Â¼
+* ï¿½ï¿½ï¿½ï¿½Ä¿Â¼
     ``` 
      cd project_wei
     ```
-* °²×°ÒÀÀµ
+* ï¿½ï¿½×°ï¿½ï¿½ï¿½ï¿½
     ``` 
      npm install 
     ```
-* Æô¶¯ÏîÄ¿
+* ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿
     ``` 
      node app.js
     ```
-* ·ÃÎÊ
+* ï¿½ï¿½ï¿½ï¿½
     ``` 
      http://127.0.0.1:16924
     ```
    
     
     ```
-    ãéãéÀ´ - º¼ÖÝ°Ú°ÚÍøÂç¿Æ¼¼ÓÐÏÞ¹«Ë¾
+   æ±©æ±©æ¥ - å—äº¬é”‹è€€ç½‘ç»œç§‘æŠ€æœ‰é™å…¬å¸
