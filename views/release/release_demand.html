@@ -42,29 +42,12 @@
 
 	<div class="release_alert">
 		<p class="title">发布需求成功，请稍后</p>
-		<p class="confirm">确定</p>
+		<p class="confirm" id="confirm">确定</p>
 	</div>
 
 
 	<script src="../../public/minjs/index/zepto.min.js"></script>
 	<script src="../../public/js/libs/zepto/touch.js"></script>
-	<script>
-		$('.icon-back' ).on('tap', function(){
-			$('.mask' ).show();
-			$('.cancel_alert' ).show();
-			$('.cancel' ).on('tap', function(){
-				$('.mask' ).hide();
-				$('.cancel_alert' ).hide();
-			});
-			$('.sure' ).on('tap', function(){
-				history.back();
-			})
-		});
-		$('.header-publish' ).on('tap', function(){
-			$('.mask' ).css('background','#A7A7AA').show();
-			$('.release_alert' ).show();
-
-		})
-	</script>
+	<script src="../../public/js/release/release_demand.js"></script>
 </body>
 </html>
