@@ -34,23 +34,23 @@
   top: 2px;
   right: 20px;
 }
-.footer #first {
+#first {
   background: url("../../img/footer/bottom_nor_icon04@2x.png") no-repeat bottom 24px center;
   background-size: 30%;
 }
-.footer #ordered {
+#ordered {
   background: url("../../img/footer/bottom_nor_icon03@2x.png") no-repeat bottom 24px center;
   background-size: 30%;
 }
-.footer #add {
+#add {
   background: url("../../img/footer/bottom_icon05@2x.png") no-repeat center;
   background-size: 70%;
 }
-.footer #messages {
+#messages {
   background: url("../../img/footer/bottom_nor_icon02@2x.png") no-repeat bottom 24px center;
   background-size: 30%;
 }
-.footer #me {
+#me {
   background: url("../../img/footer/bottom_nor_icon01@2x.png") no-repeat bottom 24px center;
   background-size: 30%;
 }

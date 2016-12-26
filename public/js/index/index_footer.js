@@ -10,7 +10,7 @@ first.addEventListener('touchend',function(){
     location.href = '../index/index.html'
 });
 add.addEventListener('touchend',function(){
-    location.href = '../info/index.html'
+    location.href = '../release/publish.html'
 });
 messages.addEventListener('touchend',function(){
     location.href = '../info/message.html'
