@@ -61,6 +61,7 @@ $('.reson-li' ).on('tap', function(){
 
 $('.sure-btn').on('tap', function(){
 	$('.mask' ).show();
+	//$('.release_alert').show;
 	$('.cancel-order' ).show();
 	$('.confirm' ).on('tap', function(){
 		history.back();
@@ -71,6 +72,9 @@ $('.sure-btn').on('tap', function(){
 $('.upload-conf').on('tap', function(){
 	$('.mask' ).show();
 	$('.upload-alert' ).show();
+	$('.confirm').on('tap',function(){
+		location.href='../../personal/order.html'
+	})
 });
 $('.cancel-upload').on('tap', function(){
 	$('.mask' ).show();

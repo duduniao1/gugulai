@@ -145,3 +145,6 @@ $info_title.on('tap',function(){
 		$self.addClass('active')
 	}
 });
+$('.search_input').on('tap',function(){
+	location.href='../release/release_search.html'
+})
