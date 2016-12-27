@@ -26,6 +26,7 @@ $('.sure').on('tap', function(){
 
 $('.tel-icon').on('tap', function(){
 	$('.mask' ).show();
+	$('.release_alert').show();
 	$('.cancel_alert' ).show();
 	$('.sure').on('tap', function(){
 		$('.mask' ).hide();
@@ -61,8 +62,8 @@ $('.reson-li' ).on('tap', function(){
 
 $('.sure-btn').on('tap', function(){
 	$('.mask' ).show();
-	//$('.release_alert').show;
-	$('.cancel-order' ).show();
+	$('.release_alert').show;
+	$('.cancel_order' ).show();
 	$('.confirm' ).on('tap', function(){
 		history.back();
 	});
@@ -73,7 +74,7 @@ $('.upload-conf').on('tap', function(){
 	$('.mask' ).show();
 	$('.upload-alert' ).show();
 	$('.confirm').on('tap',function(){
-		location.href='../../personal/order.html'
+		location.href='../../views/personal/order.html'
 	})
 });
 $('.cancel-upload').on('tap', function(){
