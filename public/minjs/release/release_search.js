@@ -1,0 +1,1 @@
+$(".header-cancel").on("tap",function(){location.href="../index/index.html"});
