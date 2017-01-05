@@ -5,18 +5,19 @@
 
 
 function testVal(){
-	if($('#username').val() != '' && $('#password').val() != ''){
-		$('#btn').css('background' , '#ea5404' ).on('tap', function(){
-			location.href = '../info/info_agent.html'
+	if($('.inpt01').val() != '' && $('.inpt02').val() != ''){
+		$('.login_box_login').css('background' , '#ea5404' ).on('tap', function(){
+			location.href = '../info/info.html'
 		})
 
 	}
 }
-$('.footer_reg').on('tap', function(){
+testVal();
+$('.login_box_register').on('tap', function(){
 	location.href = '../login/register.html'
 });
 
-$('.footer_pass').on('tap', function(){
+$('.login_box_forget').on('tap', function(){
 	location.href = '../login/passwd.html'
 });
 
